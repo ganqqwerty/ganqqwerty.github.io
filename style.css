@@ -1,0 +1,39 @@
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #003366;
+  color: white;
+  font-weight: bold;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td.hiragana, td.romaji {
+  filter: blur(0.6em);
+  cursor: pointer;
+}
+
+td.hiragana:hover, td.romaji:hover {
+  filter: none;
+}
+
+td.translation {
+  font-style: italic;
+}
+
+td.romaji {
+  font-family: "Courier New", Courier, monospace;
+}

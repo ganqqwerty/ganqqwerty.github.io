@@ -38,7 +38,7 @@ function isValidLoanwords(loanwords) {
 function generateTable(loanwords) {
   const table = document.createElement("table");
   const headers = ["Katakana", "Hiragana", "Romaji", "Translation"];
-  //table.appendChild(generateHeaderRow(headers));
+  table.appendChild(generateHeaderRow(headers));
   //loanwords.forEach(loanword => table.appendChild(generateRow(loanword, headers)));
   return table;
 }
